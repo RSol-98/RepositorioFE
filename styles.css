@@ -40,11 +40,71 @@ html{
 }
 #inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
-    color: royalblue;
+    color: rgb(35, 17, 102);
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
 #inicio .contenido header .contenido-header nav ul li a:hover {
-    color: rgb(235, 129, 203);
+    color: rgb(235, 127, 203);
+}
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: rgb(35, 17, 102);
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: rgb(235, 127, 203);
+}
+#inicio .contenido .presentacion{
+     max-width: 1100px;
+     height: 100vh;
+     margin: auto;
+     color: rgb(35, 17, 102);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color:rgb(149, 106, 199),
+}
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20 px 25px;
+    border: 2px solid rgb(35, 17, 102);
+    border-radius: 50px;
+    color: rgb(35, 17, 102);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#inicio .contenido .presentacion a:hover{
+    background-color: rgb(149, 106, 199);
+}
+#icono-nav{
+    color: rgb(35, 17, 102);
+    display: none;
 }
