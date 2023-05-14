@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="styles.css">
         <tittle> Mi portfolio web</tittle>
@@ -16,18 +16,19 @@
                         <h1> Sol Rodriguez</h1>
                         <nav id="nav" class="">
                             <ul id="links">
-                                <li><a href="#inicio">Inicio</a></li>
-                                <li><a href="#sobremi">Sobre mi</a></li>
-                                <li><a href="#porftolio">Portfolio</a></li>
-                                <li><a href="#contacto">Contacto</a></li>
+                                <li><a href="#inicio" onclick="seleccionar(this)">Inicio</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                                <li><a href="#conocimientos" onclick="seleccionar(this)">Conocimientos</a></li>
+                                <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                                <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
                             </ul>
                         </nav>
-                        <div id="icono-nav">
+                        <div id="icono-nav" onclick="responsiveMenu()">
                             <i class="fa-solid fa-bars"></i>
                          </div>
-                         <div id="redes">
+                         <div class="redes">
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-light fa-envelope"></i></a>
+                            <a href="#"><i class="fa-solid fa-inbox"></i></a>
                          </div>
                     </div>
                 </header>
@@ -51,5 +52,224 @@
                 <a href="#">Descargar cv</a>
             </div>
         </section>
+        <section id="conocimientos">
+            <h3 class="titulo-seccion">Conocimientos</h3>
+            <div class="fila">
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-language"></i></span>
+                    <h4>Idiomas</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>Ingles</li>
+                        <li>Intermedio</li>
+                        <li>Nivel B2</li>
+                    </ul>
+                    <p>Estudie en Instituto Esgra.</p>
+                </div>
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-language"></i></span>
+                    <h4>Idiomas</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>Coreano</li>
+                        <li>Básico</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                    <p>Tomo clases a través de una comunidad web llamada "Corea con Kiki"</p>
+                </div>
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-language"></i></span>
+                    <h4>Idiomas</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>Japones</li>
+                        <li>Básico</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                    <p>Utilizo libros y paginas web para aprender.</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Lenguajes de programación</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>HTML</li>
+                        <li>Intermedio</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                    <p>Aprendo con videos tutoriales e informacion web.</p>
+                </div>
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Lenguajes de programación</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>JS</li>
+                        <li>Intermedio</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                    <p>Aprendi este lenguaje en gran parte con el programa Argentina Programa.</p>
+                </div>
+                <div class="conocimiento">
+                    <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Lenguajes de programación</h4>
+                    <hr>
+                    <ul class="conocimientos-tag">
+                        <li>CSS</li>
+                        <li>Intermedio</li>
+                        <li>Autodidacta</li>
+                    </ul>
+                    <p>Aprendo este lenguaje a traves de documentos y videos.</p>
+                </div>
+            </div>
+        </section>
+        <div class="contenedor-skills" id="skills">
+            <h3>Habilidades</h3>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Html & Css</p>
+                    <span class="porcentaje">85%</span>
+                </div>
+                <div class="barra">
+                    <div class="" id="html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Javascript</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div class="" id="js"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Base de datos</p>
+                    <span class="porcentaje">75%</span>
+                </div>
+                <div class="barra">
+                    <div class="" id="bd"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Photoshop</p>
+                    <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                    <div class="" id="ps"></div>
+                </div>
+            </div>
+        </div>
+        <section id="portfolio">
+            <h3 class="titulo-seccion">Mis proyectos</h3>
+            <div class="fila">
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <div class="overlay"></div>
+                    <img src="imagenes/Proyectos.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Desarrollo de videojuegos </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3 class="titulo-seccion">Dejame un mensaje.</h3>
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                        <input type="text" placeholder="Direccion de correo" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Asunto" class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" class="input-full"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Todos los derechos reservados-2023</p>
+            <div id="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-inbox"></i></a>
+             </div>
+        </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
