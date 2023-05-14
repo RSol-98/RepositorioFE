@@ -3,23 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 html{
     scroll-behavior: smooth;
 }
 #inicio{
-    background: url("imagenes/fondo.jpg");
+    background: linear-gradient( rgba(71, 54, 87, 0.7), rgba(71, 54, 87, .6)), url("imagenes/fondo.jpg");
     background-size: cover;
     background-position: center center;
-    height: 100vh
+    height: 100vh;
 }
 #inicio .contenido header{
-    background-color: rgb(149, 106, 199);
+    background-color: rgb(142, 100, 190);
     position: fixed;
     width: 100%;
     z-index: 100;
-    top: 0%;
+    top: 0;
 }
 #inicio .contenido header .contenido-header{
     max-width: 1100px;
@@ -28,6 +28,9 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header .seleccionado{
+    color: #a74e61;
 }
 #inicio .contenido header .contenido-header h1 {
     text-align: center;
@@ -93,7 +96,7 @@ html{
     text-decoration: none;
     display: inline-block;
     margin: 25px;
-    padding: 20 px 25px;
+    padding: 20px 25px;
     border: 2px solid rgb(35, 17, 102);
     border-radius: 50px;
     color: rgb(35, 17, 102);
@@ -133,7 +136,7 @@ html{
     text-transform: uppercase;
     color: rgb(35, 17, 102);
     text-decoration: underline;
-    text-decoration-color: aliceblue;
+    text-decoration-color: rgb(167, 143, 250);
     text-decoration-thickness: 5px;
 }
 #sobremi .sobremi h2{
@@ -178,20 +181,22 @@ html{
     background-color: azure;
 }
 #conocimientos .titulo-seccion{
+    text-align: center;
     font-size: 22px;
     text-transform: uppercase;
     color: rgb(35, 17, 102);
     text-decoration: underline;
-    text-decoration-color: aliceblue;
+    text-decoration-color: rgb(35, 17, 102);
     text-decoration-thickness: 5px;
 }
 #conocimientos .fila{
     display: flex;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 30px auto;
 }
 #conocimientos .fila .conocimiento{
+    max-width: 350px;
     background-color: rgb(235, 127, 203) ;
     padding: 30px;
     margin: 0 5px;
@@ -223,7 +228,7 @@ html{
 #conocimientos .fila .conocimiento ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 #conocimientos .fila .conocimiento p{
@@ -235,6 +240,7 @@ html{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #270152;
     background-position: center center;
     padding: 100px 0;
     text-align: center;
@@ -316,4 +322,198 @@ html{
     100% {
         width: 70%;
     }   
+}
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(35, 17, 102);
+    text-decoration: underline;
+    text-decoration-color: rgb(35, 17, 102);
+    text-decoration-thickness: 5px;
+}
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#portfolio .fila .proyectos {
+    max-width: 450px;
+    border: 1px solid rgb(35, 17, 102);
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .fila .proyectos img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+#portfolio .fila .proyectos:hover img {
+    filter: grayscale(0);
+}
+#portfolio .fila .proyectos .info {
+    position: absolute;
+    left: 0;
+    background-color: #020202;
+    color: rgb(235, 127, 203);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+#portfolio .fila .proyectos:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+#contacto {
+    padding: 100px 15px;
+    background-color: #604980;
+}
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(35, 17, 102);
+    text-decoration: underline;
+    text-decoration-color: #604980;
+    text-decoration-thickness: 5px;
+}
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid rgb(35, 17, 102);
+}
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+#contacto .btn-enviar:hover {
+    background-color: #604980;
+    color: #270152;
+}
+footer {
+    background-color: rgb(35, 17, 102);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/* seccion responsive */
+@media screen and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    nav .responsive {
+        display: block;
+        background-color: #020202;
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav .responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+    nav .responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{ 
+        text-align: center;
+    }
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #conocimientos {
+        padding: 50px 15px;
+    }
+    #conocimientos .fila {
+        display: block;
+    }
+    #conocimientos .fila .conocimiento {
+        margin: 10px auto;
+    }
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+    #portfolio{
+        padding: 50px 0;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyectos {
+        margin: 10px auto;
+    }
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto.contenedor-form.mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
